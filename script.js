@@ -206,7 +206,6 @@ function interpretarClima(codigo) {
         96: "Trovoada com granizo",
         99: "Trovoada com granizo forte"
     };
-
     return condicoes[codigo] || "Condição desconhecida";
 }
 ```

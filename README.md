@@ -66,7 +66,7 @@ Utilizado para obter informações atuais do clima, como temperatura, sensação
 1. Clone o repositório:
 
 ```bash
-git clone URL_DO_REPOSITORIO
+git clone https://github.com/NicolasMota2025/ClimaAgora.git
 ```
 
 2. Acesse a pasta do projeto:

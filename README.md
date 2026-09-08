@@ -92,8 +92,8 @@ ClimaAgora/
 
 ## Links
 
-* **Aplicação no ar (GitHub Pages):** EM BREVE
-* **Repositório no GitHub:** EM BREVE
+* **Aplicação no ar (GitHub Pages):** https://nicolasmota2025.github.io/ClimaAgora/
+* **Repositório no GitHub:** https://github.com/NicolasMota2025/ClimaAgora
 
 ## Observações
 

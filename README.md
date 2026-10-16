@@ -1,4 +1,4 @@
-# ClimaAgora 🌤️
+# ClimaAgora 🌤️ — Bootcamp II, Etapa 02
 
 ## Autor
 
@@ -6,95 +6,54 @@
 
 ## Descrição
 
-O ClimaAgora é uma aplicação web desenvolvida para consultar informações meteorológicas de diferentes cidades. O usuário informa o nome de uma cidade e a aplicação realiza uma consulta a uma API pública para apresentar os dados do clima de forma simples, organizada e fácil de visualizar.
+O ClimaAgora é uma aplicação web que permite consultar informações meteorológicas de diferentes cidades por meio da API Open-Meteo. A aplicação também possui uma funcionalidade de favoritos com persistência de dados utilizando o Supabase e pode ser executada em um container Docker.
 
-## API utilizada
+## APIs e serviços utilizados
 
-A aplicação utiliza a **Open-Meteo**, uma API pública de dados meteorológicos que não exige chave de autenticação.
-
-* **API:** Open-Meteo
-* **Documentação:** https://open-meteo.com/en/docs
-* **API de geocodificação:** https://geocoding-api.open-meteo.com/
-* **API de previsão:** https://api.open-meteo.com/
-
-### Endpoints consumidos
-
-**Busca de localização:**
-
-```text
-https://geocoding-api.open-meteo.com/v1/search
-```
-
-Utilizado para encontrar a cidade e obter informações como nome, país, latitude, longitude e fuso horário.
-
-**Previsão meteorológica:**
-
-```text
-https://api.open-meteo.com/v1/forecast
-```
-
-Utilizado para obter informações atuais do clima, como temperatura, sensação térmica, umidade, velocidade do vento e código meteorológico.
+- **Open-Meteo:** consulta de dados meteorológicos.
+- **Supabase:** banco de dados PostgreSQL utilizado para persistir os favoritos.
+- **Docker:** criação e execução da aplicação em container.
+- **Docker Hub:** publicação da imagem Docker.
+- **GitHub Pages:** publicação da aplicação web.
 
 ## Funcionalidades
 
-* 🔎 Busca de cidades pelo nome.
-* 🌡️ Consulta da temperatura atual.
-* 🌡️ Exibição da sensação térmica.
-* 💧 Exibição da umidade relativa do ar.
-* 💨 Exibição da velocidade do vento.
-* ☁️ Identificação da condição meteorológica.
-* 📍 Exibição da cidade e do país.
-* 🕐 Exibição do fuso horário da localização.
-* ⏳ Mensagem de carregamento durante a consulta.
-* ❌ Tratamento de erros para cidades inexistentes ou problemas na API.
-* 📱 Interface adaptada para dispositivos móveis.
-* ⌨️ Possibilidade de realizar a busca pressionando a tecla Enter.
+- Busca de cidades pelo nome.
+- Consulta de temperatura, sensação térmica, umidade e velocidade do vento.
+- Exibição da condição meteorológica, país e fuso horário.
+- Salvamento e listagem de cidades favoritas.
+- Persistência dos favoritos no Supabase.
+- Tratamento de erros durante as consultas.
+- Interface responsiva.
+- Execução da aplicação utilizando Docker.
 
 ## Tecnologias utilizadas
 
-* HTML5
-* CSS3
-* JavaScript
-* Fetch API
-* Open-Meteo API
-* Git
-* GitHub
-* GitHub Pages
+- HTML5
+- CSS3
+- JavaScript
+- Fetch API
+- Open-Meteo API
+- Supabase
+- Docker
+- Git e GitHub
 
-## Como executar localmente
+## Como executar com Docker
 
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/NicolasMota2025/ClimaAgora.git
-```
-
-2. Acesse a pasta do projeto:
+Execute:
 
 ```bash
-cd ClimaAgora
+docker run -d -p 8080:80 --name climaagora nicolasmotaa/bootcamp2-app:latest
 ```
 
-3. Abra o arquivo `index.html` em um navegador.
-
-Também é possível utilizar a extensão **Live Server** no Visual Studio Code ou outro servidor local para executar a aplicação.
-
-## Estrutura do projeto
-
-```text
-ClimaAgora/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
+Depois, acesse http://localhost:8080.
 
 ## Links
 
-* **Aplicação no ar (GitHub Pages):** https://nicolasmota2025.github.io/ClimaAgora/
-* **Repositório no GitHub:** https://github.com/NicolasMota2025/ClimaAgora
+- **GitHub Pages:** https://nicolasmota2025.github.io/ClimaAgora/
+- **Repositório GitHub:** https://github.com/NicolasMota2025/ClimaAgora
+- **Docker Hub:** https://hub.docker.com/r/nicolasmotaa/bootcamp2-app
 
 ## Observações
 
-Este projeto foi desenvolvido como parte da atividade **Bootcamp II — Etapa 01 — Desafio Individual**, com o objetivo de desenvolver uma aplicação frontend capaz de consumir uma API pública, manipular dados em formato JSON, utilizar requisições assíncronas com `fetch` e realizar a publicação da aplicação utilizando o GitHub Pages.
+Este projeto foi desenvolvido no Bootcamp II do CEUB, evoluindo a aplicação inicial de consulta meteorológica com a integração de persistência de favoritos e execução por meio de containers Docker.

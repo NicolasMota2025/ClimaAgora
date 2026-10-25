@@ -1,4 +1,5 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { interpretarClima } from "./clima.js";
 
 const SUPABASE_URL = "https://cwdjzpybvfdiqpyeqyab.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_su3UDM48PooIPXWVItHM2Q_kRYDVboQ";

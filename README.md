@@ -254,3 +254,5 @@ A Etapa 03 do Bootcamp II ampliou o projeto ClimaAgora com testes automatizados,
 Essas melhorias contribuem para a verificação do comportamento do código, a identificação de problemas durante as alterações e a distribuição da aplicação em um ambiente padronizado.
 
 O projeto continua utilizando a API Open-Meteo para consulta meteorológica e o Supabase para persistência das cidades favoritas.
+
+Documentação revisada para a entrega da Etapa 03.
